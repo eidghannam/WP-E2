@@ -1,0 +1,279 @@
+/* 
+  Global styles
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Enables smooth scrolling behavior for internal links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 2% 5%;
+  background-color: #cbcaca;
+}
+
+section {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Header Section */
+
+header {
+  background-color: #333333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #989494;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #f5cb00; /* Changes color on hover */
+}
+
+/* About Me Section */
+
+#about-me {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+#about-me .img-div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 30px 0 0 600px;
+  background-image: url(wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Skills Section */
+
+#skills {
+  padding: 20px;
+  border-radius: 10px;
+  background-image: url(blueWallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  padding: 20px 20px 40px 20px;
+}
+
+#skills h2 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+#skills .skills-container {
+  background-color: rgba(255, 253, 253, 0.8); /* Semi-transparent background */
+  padding: 30px 10px;
+  border-radius: 10px;
+}
+
+#skills .skills-container span {
+  padding: 10px;
+  background-color: #54a65c;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Projects Section */
+
+#projects {
+  padding: 20px 0px 40px 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+}
+
+#projects .card {
+  background-color: #a13bb2;
+  width: 220px;
+  height: 220px;
+  padding: 10px 10px 100px 10px;
+  margin: 0 0 50px 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#projects .card:nth-child(2) {
+  position: absolute;
+  top: -425px;
+  left: 30px;
+}
+
+#projects .card:nth-child(3) {
+  background-color: #ff9900; /* Orange background */
+}
+
+#projects .card:nth-child(4) {
+  background-color: #147dd6; /* Blue background */
+  margin-bottom: 0;
+}
+
+#projects .card:nth-child(5) {
+  width: 100%;
+  padding-bottom: 200px;
+  background-color: #597686; /* Grey-blue background */
+  margin-bottom: 0px;
+}
+
+/* Contact Me Section */
+
+#contact-me {
+  padding: 20px 0 20px 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact-me h2 {
+  font-size: 24px;
+  text-align: left;
+}
+
+#contact-me p {
+  text-align: left;
+}
+
+#contact-me form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact-me form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#contact-me form input[type="text"],
+#contact-me form input[type="email"],
+#contact-me form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-me form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: white;
+  color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #407466;
+}
+
+#contact-me form input[type="submit"]:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Footer Section */
+
+footer {
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f5cb00;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* Arrow button for navigation (Go To The Top Button) */
+.arrow-div {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  padding: 0;
+  padding-left: 5px;
+  background-color: #1581ff;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/* Arrowhead for the arrow button */
+.arrow-div .arrow-head {
+  position: absolute;
+  top: 5px;
+  left: 13px;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 15px solid white;
+  border-radius: 5px;
+}
+
+/* Tail of the arrow button */
+.arrow-div .arrow-tail {
+  position: absolute;
+  top: 19px;
+  left: 21px;
+  background-color: white;
+  width: 8px;
+  height: 20px;
+  border-radius: 0px 0px 3px 3px;
+}
